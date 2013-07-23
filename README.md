@@ -12,4 +12,15 @@ Uso
 
 Requerimientos
 --------------
-Es necesario tener instalado un agente SNMP
+Es necesario:
+
+* Tener instalado un agente SNMP
+* Correr el programa con permisos suficientes para ejecutar kill -9 pid
+
+Funcionamiento
+--------------
+1.  Obtiene nombre de cada proceso
+2.  Obtiene proceso que mas memoria ocupa, siempre que no sea mysqld
+3.  Obtiene memoria swap utilizada
+4.  Si la memoria swap supera el 50%
+    1.  Mata al proceso que mas memoria ocupa

@@ -1,0 +1,8 @@
+{
+    "name": "route",
+    "version": "0.0.1",
+    "description": "Ejemplo de snmp en nodejs. Devuelve la tabla de ruteo de un agente SNMP",
+    "dependencies": {
+        "snmp-native": "1.0.14"
+    }
+}
