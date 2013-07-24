@@ -6,16 +6,26 @@ Node.js kill
 >
 > * No apaga motores de base de datos
 
-Uso
----
-    sudo nodejs kill
-
 Requerimientos
 --------------
 Es necesario:
 
 * Tener instalado un agente SNMP
 * Correr el programa con permisos suficientes para ejecutar kill -9 pid
+
+Uso e Instalacion
+---
+Clonar el repositorio
+
+    git clone JulianMayorga/kill
+
+Instalar dependencias
+
+    npm install
+
+Correr el programa
+
+    sudo nodejs kill
 
 Funcionamiento
 --------------
