@@ -25,6 +25,7 @@ var victima = {
     memoria_usada: 0,
     matar: function () {
         // Matamos a la victima
+        process.kill(this.pid);
         return true;
     }
 };
@@ -114,7 +115,7 @@ var job = new cronJob('*/1 * * * *', function(){
                 }
 
                 if (swap.supera(50) && victima.nombre !== undefined) {
-                    // victima.matar();
+                    victima.matar();
                     console.log("Matando a proceso " + victima.nombre + "\n");
                 } else {
                     console.log("La victima que se salvo es " + victima.nombre +
